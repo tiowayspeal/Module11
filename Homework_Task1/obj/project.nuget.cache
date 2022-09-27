@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7G02DGlhcLhmY1qu1EoeRYduRG6M3tKeET+ySVFc0/qXiIncmjgOP/bUZBeacSjW3RAuWvAQFzKkF8EBCuRlvQ==",
+  "dgSpecHash": "ar4r/Zbdh4aXHPvSMbzx0m8Dj1hGuPNkD26fPGJ5DPrBrrCtuL14uP83uv9TV/S04YQ7QoNtQj/vPqlJONrtAg==",
   "success": true,
-  "projectFilePath": "D:\\Visual Projects\\Skillbox\\Исходники Модуль 11\\Homework_Task1\\Homework_Task1.csproj",
+  "projectFilePath": "D:\\VisualProjects\\Skillbox\\Module11\\Homework_Task1\\Homework_Task1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msii\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

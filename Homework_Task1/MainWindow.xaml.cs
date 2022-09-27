@@ -27,7 +27,8 @@ namespace Homework_Task1
 
         private void ConsultantEntryBtn_Click(object sender, RoutedEventArgs e)
         {
-            //Check login pass rights
+            Console.WriteLine("");
+            //Check login pass rights 
         }
 
         private void AdminEntryBtn_Click(object sender, RoutedEventArgs e)
