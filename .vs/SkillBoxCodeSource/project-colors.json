@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ae8317ba-2b88-4c4d-8b10-ea0eb5447754": {
+      "ProjectGuid": "ae8317ba-2b88-4c4d-8b10-ea0eb5447754",
+      "DisplayName": "Homework",
+      "ColorIndex": 0
+    },
+    "5d4c1821-3846-4c46-bc74-2cb0a3b0f1d1": {
+      "ProjectGuid": "5d4c1821-3846-4c46-bc74-2cb0a3b0f1d1",
+      "DisplayName": "Example_1153",
+      "ColorIndex": 1
+    },
+    "321a6842-d7c1-4e32-b6ae-4150acd3e755": {
+      "ProjectGuid": "321a6842-d7c1-4e32-b6ae-4150acd3e755",
+      "DisplayName": "Example_1154",
+      "ColorIndex": 2
+    },
+    "997e6195-748e-4c1e-bd1d-e5aed060250d": {
+      "ProjectGuid": "997e6195-748e-4c1e-bd1d-e5aed060250d",
+      "DisplayName": "Homework_Task1",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
