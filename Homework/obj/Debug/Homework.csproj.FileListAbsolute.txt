@@ -6,3 +6,14 @@ D:\Visual Projects\Skillbox\Исходники Модуль 11\Homework\obj\Debu
 D:\Visual Projects\Skillbox\Исходники Модуль 11\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
 D:\Visual Projects\Skillbox\Исходники Модуль 11\Homework\obj\Debug\Homework.exe
 D:\Visual Projects\Skillbox\Исходники Модуль 11\Homework\obj\Debug\Homework.pdb
+D:\VisualProjects\Skillbox\Module11\Homework\bin\Debug\Homework.exe.config
+D:\VisualProjects\Skillbox\Module11\Homework\bin\Debug\Homework.exe
+D:\VisualProjects\Skillbox\Module11\Homework\bin\Debug\Homework.pdb
+D:\VisualProjects\Skillbox\Module11\Homework\bin\Debug\Newtonsoft.Json.dll
+D:\VisualProjects\Skillbox\Module11\Homework\bin\Debug\Newtonsoft.Json.xml
+D:\VisualProjects\Skillbox\Module11\Homework\obj\Debug\Homework.csproj.AssemblyReference.cache
+D:\VisualProjects\Skillbox\Module11\Homework\obj\Debug\Homework.csproj.SuggestedBindingRedirects.cache
+D:\VisualProjects\Skillbox\Module11\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
+D:\VisualProjects\Skillbox\Module11\Homework\obj\Debug\Homework.csproj.CopyComplete
+D:\VisualProjects\Skillbox\Module11\Homework\obj\Debug\Homework.exe
+D:\VisualProjects\Skillbox\Module11\Homework\obj\Debug\Homework.pdb

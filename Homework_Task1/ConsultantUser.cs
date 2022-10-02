@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace Homework_Task1
 {
-    internal class Consultant
+    internal class ConsultantUser
     {
         List<Client> clients;
 
-        public Consultant() 
+
+        public ConsultantUser() 
         {
             clients = new List<Client>();
             clients = LoadClientsJson();
@@ -26,10 +27,7 @@ namespace Homework_Task1
         {
             string json = File.ReadAllText("_clients.json");
 
-            
-            clients = JsonConvert.DeserializeObject<List<Client>>(json);
-
-            return new List<Client>();
+            return JsonConvert.DeserializeObject<List<Client>>(json);
         }
         
         /// <summary>
@@ -49,10 +47,15 @@ namespace Homework_Task1
         /// <param name="_firstName"></param>
         public void ChangeClientPhoneNumber(int id, string _phoneNumber)
         {
-            if (_phoneNumber != null && _phoneNumber != "")
+            if (id >= 0 && id < clients.Count && _phoneNumber != null && _phoneNumber != "")
                 clients[id].PhoneNumber = _phoneNumber;
         }
 
+        public List<Client> Clients
+        {
+            get { return clients; }
+            set { clients = value; }
+        }
         #region Commented Methods
         ///// <summary>
         ///// Изменить имя клиента

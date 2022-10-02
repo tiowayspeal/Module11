@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\App.xaml
-11407045341
+3397140125
 
-8-387074924
+10-84880594
 195-1230691234
-MainWindow.xaml;
+AdminWindow.xaml;ConsultantWindow.xaml;MainWindow.xaml;
 
 False
 
