@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Projects\\Skillbox\\Исходники Модуль 11\\Homework_Task1\\Homework_Task1.csproj",
+      "projectUniqueName": "D:\\VisualProjects\\Skillbox\\Module11\\Homework_Task1\\Homework_Task1.csproj",
       "projectName": "Homework_Task1",
-      "projectPath": "D:\\Visual Projects\\Skillbox\\Исходники Модуль 11\\Homework_Task1\\Homework_Task1.csproj",
+      "projectPath": "D:\\VisualProjects\\Skillbox\\Module11\\Homework_Task1\\Homework_Task1.csproj",
       "packagesPath": "C:\\Users\\msii\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Projects\\Skillbox\\Исходники Модуль 11\\Homework_Task1\\obj\\",
+      "outputPath": "D:\\VisualProjects\\Skillbox\\Module11\\Homework_Task1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\msii\\AppData\\Roaming\\NuGet\\NuGet.Config",

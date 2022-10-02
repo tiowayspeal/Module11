@@ -13,7 +13,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Image Source="/v3FEBRLxJKc.jpg" Grid.Row="0" />
+        <Image  Grid.Row="0" Source="/Resources/v3FEBRLxJKc.jpg" />
         <TextBlock HorizontalAlignment="Left" FontSize="20" Margin="20,10,0,0" VerticalAlignment="Top" Grid.Row="1"  Text="Login:" Height="27" Width="53"/>
         <TextBox Name="loginTextBox"  HorizontalAlignment="Left" Margin="20,40,0,0" Grid.Row="1" FontSize="25" Width="120" Height="30" VerticalAlignment="Top"/>
 

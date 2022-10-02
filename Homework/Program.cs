@@ -16,6 +16,9 @@ namespace Homework
             I1 i1b = new B();
             i1b.M();
 
+            string s = "s";
+            var s2 = s;
+            s = "ss";
             Console.ReadKey();
         }
     }
