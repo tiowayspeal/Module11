@@ -7,21 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AdminWindow.xaml.cs">
+    <Compile Update="Windows\AddNewClientWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ConsultantWindow.xaml.cs">
+    <Compile Update="Windows\ManagerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\ConsultantWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AdminWindow.xaml">
+    <Page Update="Windows\AddNewClientWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ConsultantWindow.xaml">
+    <Page Update="Windows\ManagerWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Windows\ConsultantWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

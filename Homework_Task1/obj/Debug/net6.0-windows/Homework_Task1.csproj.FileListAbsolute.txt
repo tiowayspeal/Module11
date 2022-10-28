@@ -29,11 +29,9 @@ D:\VisualProjects\Skillbox\Module11\Homework_Task1\bin\Debug\net6.0-windows\ref\
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\bin\Debug\net6.0-windows\Homework_Task1.pdb
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1.csproj.AssemblyReference.cache
-D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\App.g.cs
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1_MarkupCompile.cache
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1_MarkupCompile.lref
-D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\MainWindow.baml
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1.g.resources
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1.GeneratedMSBuildEditorConfig.editorconfig
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1.AssemblyInfoInputs.cache
@@ -44,7 +42,11 @@ D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Home
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\ref\Homework_Task1.dll
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1.pdb
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Homework_Task1.genruntimeconfig.cache
-D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\ConsultantWindow.g.cs
-D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\ConsultantWindow.baml
-D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\AdminWindow.g.cs
-D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\AdminWindow.baml
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\AddNewClientWindow.g.cs
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\ConsultantWindow.g.cs
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\MainWindow.g.cs
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\ManagerWindow.g.cs
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\AddNewClientWindow.baml
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\ConsultantWindow.baml
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\MainWindow.baml
+D:\VisualProjects\Skillbox\Module11\Homework_Task1\obj\Debug\net6.0-windows\Windows\ManagerWindow.baml

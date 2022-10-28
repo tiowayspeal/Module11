@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\VisualProjects\Skillbox\Module11\Homework_Task1\App.xaml
-3397140125
+41874723915
 
-8-1173380130
+12-1436200373
 195-1230691234
-AdminWindow.xaml;ConsultantWindow.xaml;MainWindow.xaml;
+Windows\AddNewClientWindow.xaml;Windows\ConsultantWindow.xaml;Windows\MainWindow.xaml;Windows\ManagerWindow.xaml;
 
 False
 
