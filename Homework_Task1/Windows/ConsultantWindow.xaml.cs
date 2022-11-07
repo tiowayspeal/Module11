@@ -71,6 +71,7 @@ namespace Homework_Task1
                     clientsOC = new ObservableCollection<Client>(tempClients);
                     listBoxClients.ItemsSource = clientsOC;
                     listBoxClients.Items.Refresh();
+                    Logger.Log(consultantUser, "Sorted", "Asc");
                 }
                 if (SortTypeComboBox.SelectedItem == SortTypeComboBox_SecondName)
                 {
@@ -79,6 +80,7 @@ namespace Homework_Task1
                     clientsOC = new ObservableCollection<Client>(tempClients);
                     listBoxClients.ItemsSource = clientsOC;
                     listBoxClients.Items.Refresh();
+                    Logger.Log(consultantUser, "Sorted", "Asc");
                 }
                 if (SortTypeComboBox.SelectedItem == SortTypeComboBox_LastName)
                 {
@@ -87,6 +89,7 @@ namespace Homework_Task1
                     clientsOC = new ObservableCollection<Client>(tempClients);
                     listBoxClients.ItemsSource = clientsOC;
                     listBoxClients.Items.Refresh();
+                    Logger.Log(consultantUser, "Sorted", "Asc");
                 }
             }
             else //desc sort
@@ -99,6 +102,7 @@ namespace Homework_Task1
                     clientsOC = new ObservableCollection<Client>(tempClients);
                     listBoxClients.ItemsSource = clientsOC;
                     listBoxClients.Items.Refresh();
+                    Logger.Log(consultantUser, "Sorted", "Desc");
                 }
                 if (SortTypeComboBox.SelectedItem == SortTypeComboBox_SecondName)
                 {
@@ -108,6 +112,7 @@ namespace Homework_Task1
                     clientsOC = new ObservableCollection<Client>(tempClients);
                     listBoxClients.ItemsSource = clientsOC;
                     listBoxClients.Items.Refresh();
+                    Logger.Log(consultantUser, "Sorted", "Desc");
                 }
                 if (SortTypeComboBox.SelectedItem == SortTypeComboBox_LastName)
                 {
@@ -117,6 +122,7 @@ namespace Homework_Task1
                     clientsOC = new ObservableCollection<Client>(tempClients);
                     listBoxClients.ItemsSource = clientsOC;
                     listBoxClients.Items.Refresh();
+                    Logger.Log(consultantUser, "Sorted", "Desc");
                 }
             }
             listBoxClients.Items.Refresh();

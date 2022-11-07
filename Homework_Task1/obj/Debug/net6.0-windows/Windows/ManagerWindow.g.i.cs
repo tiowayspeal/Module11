@@ -173,7 +173,7 @@ namespace Homework_Task1 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Homework_Task1;component/windows/managerwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Homework_Task1;V1.0.0.0;component/windows/managerwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\ManagerWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
