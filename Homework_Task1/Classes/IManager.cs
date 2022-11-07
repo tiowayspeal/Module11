@@ -43,5 +43,11 @@ namespace Homework_Task1
         /// <param name="_lastName"></param>
         /// <param name="_passportNumber"></param>
         public void AddClient(string _firstName, string _secondName, string _lastName, string _phoneNumber, string _passportNumber);
+    
+        /// <summary>
+        /// Удалить клиента
+        /// </summary>
+        /// <param name="id">Индекс удаляемого клиента</param>
+        public void DeleteClient(int id);
     }
 }

@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:Homework_Task1"
         mc:Ignorable="d"
         Title="Суперконсультант" Height="500" Width="800" Closed="Window_Closed">
-    <Grid>
+    <Grid Height="500" Width="800">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column ="0" x:Name="listBoxClients">
+        <TextBlock x:Name="Why" Width="100" Height="20" Margin="10,7,423,473" Text="Сортировать по:" Grid.Column="0"/>
+        <ComboBox Grid.Column="0" x:Name="SortTypeComboBox" Width="100" Height="20" Margin="110,7,323,473" SelectionChanged="SortTypeComboBox_SelectionChanged">
+            <TextBlock x:Name="SortTypeComboBox_FirstName">Имя</TextBlock>
+            <TextBlock x:Name="SortTypeComboBox_SecondName">Фамилия</TextBlock>
+            <TextBlock x:Name="SortTypeComboBox_LastName">Отчество</TextBlock>
+        </ComboBox>
+        <Button x:Name="SortingType" Height="20" Width="20" Margin="215,7,298,473" FontFamily="Segoe MDL2 Assets" FontSize="14" Content="&#xE74A;" Click="SortingType_Click" />
+        <ListBox Height="400" Grid.Column ="0" x:Name="listBoxClients" Margin="0,30,0,70">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -31,7 +38,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <TextBlock x:Name="ClientDataTextBlock" Grid.Column="1" 
-                   Margin="10,10,10,10" Height="250" VerticalAlignment="Top">
+                   Margin="10,30,10,0" Height="250" VerticalAlignment="Top">
             <TextBlock.Text>
                 <MultiBinding StringFormat="{}ФИО: {0} {1} {2}&#x0a;Номер телефона: {3}&#x0a;Номер паспорта: *****">
                     <Binding ElementName="listBoxClients" Path="SelectedItem.SecondName"/>
@@ -47,7 +54,7 @@
                  VerticalAlignment="Top"
                  Margin="30,300,30,0"
                  FontSize="14"/>
-        
+
         <Button x:Name="ChangePhoneNumberButton" 
                 Grid.Column="1" 
                 Height="30" Width="200" 

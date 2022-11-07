@@ -20,14 +20,14 @@ namespace Homework_Task1
     /// </summary>
     public partial class ManagerWindow : Window
     {
-        readonly ObservableCollection<Client> clientsOC;
+        ObservableCollection<Client> clientsOC;
         readonly ManagerUser managerUser;
         readonly string[] clientDataFields;
         public ManagerWindow()
         {
             InitializeComponent();
             managerUser = new ManagerUser();
-            listBoxClients.DataContext = managerUser;
+            //listBoxClients.DataContext = managerUser;
             Client.CreateRandomClients(5, true);
             clientDataFields = new string[5];
             clientsOC = new ObservableCollection<Client>(managerUser.Clients);
@@ -81,7 +81,7 @@ namespace Homework_Task1
                         //How???
                         return;
                 }
-            
+
             listBoxClients.Items.Refresh();
             ListBoxClients_SelectionChanged(this, null);
             SaveChangesButtonText.TextDecorations = TextDecorations.Underline;
@@ -113,6 +113,88 @@ namespace Homework_Task1
             foreach (Client client in _clients)
             {
                 clientsOC.Add(client);
+            }
+        }
+
+        private void DeleteClientButton_Click(object sender, RoutedEventArgs e)
+        {
+            managerUser.DeleteClient(listBoxClients.SelectedIndex);
+            SaveChangesButtonText.TextDecorations = TextDecorations.Underline;
+        }
+
+        private void SortTypeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (SortingType.Content == "\uE74A") // asc sort
+            {
+                if (SortTypeComboBox.SelectedItem == SortTypeComboBox_FirstName)
+                {
+                    List<Client> tempClients = new List<Client>(clientsOC.ToList<Client>());
+                    tempClients.Sort(Client.SortedBy(SortedCriterion.FirstName));
+                    clientsOC = new ObservableCollection<Client>(tempClients);
+                    listBoxClients.ItemsSource = clientsOC;
+                    listBoxClients.Items.Refresh();
+                }
+                if (SortTypeComboBox.SelectedItem == SortTypeComboBox_SecondName)
+                {
+                    List<Client> tempClients = new List<Client>(clientsOC.ToList<Client>());
+                    tempClients.Sort(Client.SortedBy(SortedCriterion.SecondName));
+                    clientsOC = new ObservableCollection<Client>(tempClients);
+                    listBoxClients.ItemsSource = clientsOC;
+                    listBoxClients.Items.Refresh();
+                }
+                if (SortTypeComboBox.SelectedItem == SortTypeComboBox_LastName)
+                {
+                    List<Client> tempClients = new List<Client>(clientsOC.ToList<Client>());
+                    tempClients.Sort(Client.SortedBy(SortedCriterion.LastName));
+                    clientsOC = new ObservableCollection<Client>(tempClients);
+                    listBoxClients.ItemsSource = clientsOC;
+                    listBoxClients.Items.Refresh();
+                }
+            } else //desc sort
+            {
+                if (SortTypeComboBox.SelectedItem == SortTypeComboBox_FirstName)
+                {
+                    List<Client> tempClients = new List<Client>(clientsOC.ToList<Client>());
+                    tempClients.Sort(Client.SortedBy(SortedCriterion.FirstName));
+                    tempClients.Reverse();
+                    clientsOC = new ObservableCollection<Client>(tempClients);
+                    listBoxClients.ItemsSource = clientsOC;
+                    listBoxClients.Items.Refresh();
+                }
+                if (SortTypeComboBox.SelectedItem == SortTypeComboBox_SecondName)
+                {
+                    List<Client> tempClients = new List<Client>(clientsOC.ToList<Client>());
+                    tempClients.Sort(Client.SortedBy(SortedCriterion.SecondName));
+                    tempClients.Reverse();
+                    clientsOC = new ObservableCollection<Client>(tempClients);
+                    listBoxClients.ItemsSource = clientsOC;
+                    listBoxClients.Items.Refresh();
+                }
+                if (SortTypeComboBox.SelectedItem == SortTypeComboBox_LastName)
+                {
+                    List<Client> tempClients = new List<Client>(clientsOC.ToList<Client>());
+                    tempClients.Sort(Client.SortedBy(SortedCriterion.LastName));
+                    tempClients.Reverse();
+                    clientsOC = new ObservableCollection<Client>(tempClients);
+                    listBoxClients.ItemsSource = clientsOC;
+                    listBoxClients.Items.Refresh();
+                }
+            }
+            listBoxClients.Items.Refresh();
+        }
+
+        private void SortingType_Click(object sender, RoutedEventArgs e)
+        {
+            if (SortingType.Content.ToString() == "\uE74A")
+            {
+                SortingType.Content = "\uE74B";
+                SortTypeComboBox_SelectionChanged(this, null);
+                return;
+            } else
+            {
+                SortingType.Content = "\uE74A";
+                SortTypeComboBox_SelectionChanged(this, null);
+                return;
             }
         }
     }

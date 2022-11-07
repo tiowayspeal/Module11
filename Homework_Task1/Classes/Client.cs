@@ -9,6 +9,12 @@ using Newtonsoft.Json;
 
 namespace Homework_Task1
 {
+    public enum SortedCriterion
+    {
+        FirstName,
+        SecondName,
+        LastName
+    }
     public class Client
     {
         string secondName;
@@ -17,7 +23,6 @@ namespace Homework_Task1
 
         string phoneNumber;
         string passportNumber;
-
         public Client(string _secondName, string _firstName, string _lastName, string _phoneNumber, string _passportNumber)
         {
             secondName = _secondName;
@@ -91,6 +96,52 @@ namespace Homework_Task1
             }
             return str_build.ToString();
         }
+
+        #region Sorting Classes
+        private class SortByFirstName : IComparer<Client>
+        {
+            public int Compare(Client x, Client y)
+            {
+                Client X = (Client)x;
+                Client Y = (Client)y;
+
+                return String.Compare(X.FirstName, Y.FirstName);
+            }
+        }
+
+        private class SortBySecondName : IComparer<Client>
+        {
+            public int Compare(Client x, Client y)
+            {
+                Client X = (Client)x;
+                Client Y = (Client)y;
+
+                return String.Compare(X.SecondName, Y.SecondName);
+            }
+        }
+
+        private class SortByLastName : IComparer<Client>
+        {
+            public int Compare(Client x, Client y)
+            {
+                Client X = (Client)x;
+                Client Y = (Client)y;
+
+                return String.Compare(X.LastName, Y.LastName);
+            }
+        }
+
+        public static IComparer<Client> SortedBy(SortedCriterion criterion)
+        {
+            if(criterion == SortedCriterion.FirstName)
+                return new SortByFirstName();
+            else if(criterion == SortedCriterion.SecondName)
+                return new SortBySecondName();
+            else
+                return new SortByLastName();
+        }
+        #endregion
+        #region Properties
         public string SecondName 
         { 
             get { return secondName; }
@@ -141,6 +192,7 @@ namespace Homework_Task1
                     passportNumber = tempValue;
             }
         }
+        #endregion
 
     }
 }

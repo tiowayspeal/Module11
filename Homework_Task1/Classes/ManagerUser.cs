@@ -17,41 +17,6 @@ namespace Homework_Task1
             clients = LoadClientsJson();
         }
 
-        ///// <summary>
-        ///// Загружает данные клиентов из Json файла
-        ///// </summary>
-        ///// <returns>Возвращает коллекцию типа Client</returns>
-        //List<Client> LoadClientsJson()
-        //{
-        //    string json = File.ReadAllText("_clients.json");
-
-
-        //    clients = JsonConvert.DeserializeObject<List<Client>>(json);
-
-        //    return new List<Client>();
-        //}
-
-        ///// <summary>
-        ///// Сохраняет данные клиентов в Json
-        ///// </summary>
-        //public void SaveClientsJson()
-        //{
-        //    string json = JsonConvert.SerializeObject(clients);
-
-        //    File.WriteAllText("_clients.json", json);
-        //}
-
-        ///// <summary>
-        ///// Изменить номер телефона клиента
-        ///// </summary>
-        ///// <param name="id">id клиента в списке clients</param>
-        ///// <param name="_firstName"></param>
-        //public void ChangeClientPhoneNumber(int id, string _phoneNumber)
-        //{
-        //    if ( id >= 0 && id < clients.Count && _phoneNumber != null && _phoneNumber != "")
-        //        clients[id].PhoneNumber = _phoneNumber;
-        //}
-
         #region Commented Methods
 
         /// <summary>
@@ -164,7 +129,18 @@ namespace Homework_Task1
         {
             Clients.Add(new Client(_secondName, _firstName, _lastName, 
                 _phoneNumber, _passportNumber));
-            Logger.Log(this, "New Client Added", "Client");
+            Logger.Log(this, "New Client Added", "Client" + Clients.Count);
+        }
+        /// <summary>
+        /// Удалить клиента
+        /// </summary>
+        /// <param name="id">Индекс клиента в массиве</param>
+        public void DeleteClient(int id)
+        {
+            if (id < 0 || id >= Clients.Count)
+                return;
+            Logger.Log(this, "Client Deleted", "Client " + (id + 1));
+            Clients.RemoveAt(id);
         }
         public List<Client> Clients
         {

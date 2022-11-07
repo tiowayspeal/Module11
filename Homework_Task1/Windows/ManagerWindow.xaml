@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:Homework_Task1"
         mc:Ignorable="d"
         Title="СуперМенеджер" Height="500" Width="800" Closed="Window_Closed">
-    <Grid>
+    <Grid Height="500" Width="800">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column ="0" x:Name="listBoxClients" SelectionChanged="ListBoxClients_SelectionChanged">
+        <TextBlock x:Name="Why" Width="100" Height="20" Margin="10,10,290,470" Text="Сортировать по:" Grid.Column="0"/>
+        <ComboBox Grid.Column="0" x:Name="SortTypeComboBox" Width="100" Height="20" Margin="110,10,190,470" SelectionChanged="SortTypeComboBox_SelectionChanged">
+            <TextBlock x:Name="SortTypeComboBox_FirstName">Имя</TextBlock>
+            <TextBlock x:Name="SortTypeComboBox_SecondName">Фамилия</TextBlock>
+            <TextBlock x:Name="SortTypeComboBox_LastName">Отчество</TextBlock>
+        </ComboBox>
+        <Button x:Name="SortingType" Height="20" Margin="215,10,165,470" FontFamily="Segoe MDL2 Assets" FontSize="14" Content="&#xE74A;" Click="SortingType_Click" />
+        <ListBox Height="400" Grid.Column ="0" x:Name="listBoxClients" SelectionChanged="ListBoxClients_SelectionChanged" Margin="0,30,0,70">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -31,33 +38,23 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <TextBlock x:Name="clientDataFieldNamexTextBlock" Grid.Column="1"
-                   Margin="5,10,325,325" 
+                   Margin="10,29,320,306" 
                    Text="Имя:&#x0a;Фамилия:&#x0a;Отчество:&#x0a;Телефон:&#x0a;Паспорт:&#x0a;"
                    FontSize="14" LineHeight="20" LineStackingStrategy="BlockLineHeight"/>
         <ListBox x:Name="listItem" Grid.Column="1" Height="150" 
-                 Margin="80,10,10,0" VerticalAlignment="Top"/>
-        <!--<TextBlock x:Name="ClientDataTextBlock" Grid.Column="1" Visibility="Hidden"
-                   Margin="10,10,10,0" Height="150" VerticalAlignment="Top">
-            <TextBlock.Text>
-                <MultiBinding StringFormat="{}ФИО: {0} {1} {2}&#x0a;Номер телефона: {3}&#x0a;Номер паспорта: *****">
-                    <Binding ElementName="listBoxClients" Path="SelectedItem.SecondName"/>
-                    <Binding ElementName="listBoxClients" Path="SelectedItem.FirstName"/>
-                    <Binding ElementName="listBoxClients" Path="SelectedItem.LastName"/>
-                    <Binding ElementName="listBoxClients" Path="SelectedItem.PhoneNumber"/>
-                </MultiBinding>
-            </TextBlock.Text>
-        </TextBlock>-->
+                 Margin="85,30,5,0" VerticalAlignment="Top"/>
+
         <TextBox x:Name="ChangeTextBox" 
                  Grid.Column="1" 
                  Height="30"
                  VerticalAlignment="Top"
-                 Margin="40,180,40,0"
+                 Margin="40,200,40,0"
                  FontSize="14"/>
         <Button x:Name="ChangeParameterButton" 
                 Grid.Column="1" 
                 Height="30" 
                 VerticalAlignment="Top" 
-                Margin="40,230,40,0"
+                Margin="40,250,40,0"
                 Content="Изменить параметр" FontSize="14" 
                 Click="ChangeParameter_Click"/>
         <!--<Button x:Name="ChangeSecondNameButton" 
@@ -92,7 +89,7 @@
                 Grid.Column="1" 
                 Height="30" 
                 VerticalAlignment="Top" 
-                Margin="40,280,40,0"
+                Margin="40,300,40,0"
                 Click="SaveChanges_Click">
             <TextBlock x:Name="SaveChangesButtonText" Text="Сохранить изменения" FontSize="14"/>
         </Button>
@@ -100,7 +97,13 @@
                 Grid.Column="1" 
                 Height="30" 
                 VerticalAlignment="Top" 
-                Margin="40,330,40,0"
+                Margin="40,350,40,0"
                 Content="Добавить клиента" FontSize="14" Click="AddClientButton_Click"/>
+        <Button x:Name="DeleteClientButton" 
+                Grid.Column="1" 
+                Height="30" 
+                VerticalAlignment="Top" 
+                Margin="40,400,40,0"
+                Content="Удалить клиента" FontSize="14" Click="DeleteClientButton_Click"/>
     </Grid>
 </Window>
